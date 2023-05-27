@@ -40,7 +40,7 @@ class homepage extends StatelessWidget {
           Image.asset('assets/icons/notification.png',scale: 3,),
           Image.asset('assets/icons/settingb.png',scale: 3,)
 
-      ],
+        ],
 
       ),
 
