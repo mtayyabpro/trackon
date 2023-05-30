@@ -129,3 +129,21 @@ class _MyHomePageState extends State<MyHomePage> {
     // );
   }
 }
+//  class BottomMenu extends StatefulWidget{
+//   @override
+//   State<StatefulWidget> createState() {
+//    return _BottomMenuState();
+//   }
+//
+//  }
+//  class _BottomMenuState extends State<BottomMenu>{
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(title: "bottom navigation bar",),
+//       body: Text("helo"),
+//     );
+//
+//   }
+//
+// }

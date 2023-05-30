@@ -1,11 +1,14 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 
+
 class homepage extends StatelessWidget {
+
   const homepage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    //var _screensData = [settings(), track_record(), notification(), ];
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Color(0xff131267),
@@ -26,7 +29,9 @@ class homepage extends StatelessWidget {
           ),
         ],
       ),
+      
       bottomNavigationBar:CurvedNavigationBar(
+
         backgroundColor: Colors.transparent,
         color: Color(0xff131267),
         animationDuration: Duration(milliseconds: 300),
@@ -44,7 +49,70 @@ class homepage extends StatelessWidget {
 
       ),
 
-      body: ListView(),
+      body: ListView(
+        children: [
+          SizedBox(height: 10,),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              children: [
+                Column(
+                  
+                  children: [
+                    Image.asset("assets/icons/filter.png",scale: 1,),
+
+
+                  ],
+                ),
+                Column(
+                  children: [
+                    TextButton(onPressed: (){}, child: Text("Filter")),
+                  ],
+                ),
+                Column(
+                  children: [
+                    OutlinedButton(onPressed: (){}, child: Text("All")),
+                  ],
+                ),
+                Column(
+                  children: [
+                    OutlinedButton(onPressed: (){}, child: Text("Moving")),
+                  ],
+                ),
+                Column(
+                  children: [
+                    OutlinedButton(onPressed: (){}, child: Text("Stopped")),
+                  ],
+                ),
+                Column(
+                  children: [
+                    OutlinedButton(onPressed: (){}, child: Text("Idle")),
+                  ],
+                ),
+                Column(
+                  children: [
+                    OutlinedButton(onPressed: (){}, child: Text("Offline")),
+                  ],
+                )
+              ],
+            ),
+
+          ),
+          SizedBox(height: 8,),
+          Container(
+            height: 200,
+
+            decoration: BoxDecoration(
+              color: Colors.black12,
+              borderRadius: BorderRadius.circular(10),
+            ),
+            child: Container(
+              height: 50,
+              color: Colors.blueAccent,
+            ),
+          )
+        ],
+      ),
 
 
     );
