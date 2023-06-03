@@ -1,8 +1,13 @@
 //import 'package:trackon/loginform.dart';
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 import 'package:trackon/screens/homepage.dart';
+
+import 'notification.dart';
+
+
 
 class login extends StatelessWidget {
   const login({Key? key}) : super(key: key);
@@ -143,7 +148,7 @@ class login extends StatelessWidget {
               ),
               ElevatedButton(onPressed: (){
                 Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) {
-                  return homepage();
+                  return MyApp();
                 }),);
               },
                   style: ElevatedButton.styleFrom(
