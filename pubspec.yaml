@@ -96,6 +96,23 @@ flutter:
     - assets/icons/notificationIcon.png
     - assets/icons/Polygon 1.png
     - assets/icons/vehicle.png
+    - assets/icons/bell-icon.png
+    - assets/icons/car-icon.png
+    - assets/icons/command-icon.png
+    - assets/icons/geofence-icon.png
+    - assets/icons/Group 22.png
+    - assets/icons/password-icon.png
+    - assets/icons/time-zone-icon.png
+    - assets/icons/Group 25.png
+    - assets/icons/Group 36.png
+    - assets/icons/cloudsnow.png
+    - assets/icons/Group 38.png
+    - assets/icons/Group 28.png
+    - assets/icons/Group 29.png
+    - assets/icons/Group 30.png
+    - assets/icons/Group 31.png
+    - assets/icons/Group 32.png
+    - assets/icons/Group 33.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
