@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class FirstPage extends StatelessWidget {
@@ -430,13 +431,78 @@ class SecondPage extends StatelessWidget {
 class thirdPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.green,
-      child: Center(
-        child: Text(
-          'Second Page',
-          style: TextStyle(fontSize: 24, color: Colors.white),
+    return Padding(
+      padding: const EdgeInsets.only(right: 30.0,left: 30.0,top: 80.0,bottom: 80.0),
+      child: Container(
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(20),
+          boxShadow: [
+            BoxShadow(
+              color: Color(0xffe5e5e5),
+              blurRadius: 10,
+              offset: Offset(1,1),
+              spreadRadius: 5
+
+            )
+          ]
+
         ),
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(right: 4.0,left: 8.0,top: 20.0),
+              child: ListTile(
+                leading: Image.asset("assets/icons/notificationIcon.png",scale: 3,),
+                title: Text("Notification"),
+                trailing: SwitchScreen(),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 8.0),
+              child: ListTile(
+                leading: Image.asset("assets/icons/vehicle.png",scale: 3,),
+                title: Text("Notification"),
+
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 8.0),
+              child: ListTile(
+                leading: Image.asset("assets/icons/notificationIcon.png",scale: 3,),
+                title: Text("Notification"),
+
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 8.0),
+              child: ListTile(
+                leading: Image.asset("assets/icons/notificationIcon.png",scale: 3,),
+                title: Text("Notification"),
+
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 8.0),
+              child: ListTile(
+                leading: Image.asset("assets/icons/notificationIcon.png",scale: 3,),
+                title: Text("Notification"),
+
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 8.0),
+              child: ListTile(
+                leading: Image.asset("assets/icons/notificationIcon.png",scale: 3,),
+                title: Text("Notification"),
+
+              ),
+            ),
+
+          ],
+        ),
+
+
       ),
     );
   }
@@ -467,5 +533,53 @@ class fifthPage extends StatelessWidget {
         ),
       ),
     );
+  }
+}
+class SwitchScreen extends StatefulWidget {
+  @override
+  SwitchClass createState() => new SwitchClass();
+}
+
+class SwitchClass extends State {
+  bool isSwitched = false;
+  var textValue = 'Switch is OFF';
+
+  void toggleSwitch(bool value) {
+
+    if(isSwitched == false)
+    {
+      setState(() {
+        isSwitched = true;
+        textValue = 'Switch Button is ON';
+      });
+      print('Switch Button is ON');
+    }
+    else
+    {
+      setState(() {
+        isSwitched = false;
+        //textValue = 'Switch Button is OFF';
+      });
+      // print('Switch Button is OFF');
+    }
+  }
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children:[ Transform.scale(
+            scale: 1,
+            child: Switch(
+              onChanged: toggleSwitch,
+              value: isSwitched,
+              activeColor: Colors.white,
+              activeTrackColor: Color(0xff39c715),
+              inactiveThumbColor: Colors.white,
+
+              //inactiveTrackColor: Color(0xff39c715),
+            )
+        ),
+          //Text('$textValue', style: TextStyle(fontSize: 20),)
+        ]);
   }
 }
