@@ -20,13 +20,68 @@ class SecondPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return
-      Container(
-        color: Colors.green,
-        child: Center(
-          child: Text(
-            'Second Page',
-            style: TextStyle(fontSize: 24, color: Colors.white),
+      Padding(
+        padding: const EdgeInsets.only(right: 30.0,left: 30.0,top: 60.0,bottom: 80.0),
+        child: Container(
+          decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(20),
+              boxShadow: [
+                BoxShadow(
+                    color: Color(0xffe5e5e5),
+                    blurRadius: 10,
+                    offset: Offset(1,1),
+                    spreadRadius: 5
+
+                )
+              ]
+
           ),
+          child: Column(
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Column(
+                    children: [
+                      Image.asset("assets/icons/Group 28.png",scale: 3,)
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      Image.asset("assets/icons/Group 32.png",scale: 3,)
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      Image.asset("assets/icons/Group 30.png",scale: 3,)
+                    ],
+                  )
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Column(
+                    children: [
+                      Image.asset("assets/icons/Group 33.png",scale: 3,)
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      Image.asset("assets/icons/Group 31.png",scale: 3,)
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      Image.asset("assets/icons/Group 29.png",scale: 3,)
+                    ],
+                  )
+                ],
+              )
+            ],
+          ),
+
         ),
       );
   }
@@ -469,7 +524,8 @@ class fifthPage extends StatelessWidget {
     SingleChildScrollView(
       child: Padding(
         padding: const EdgeInsets.only(right: 30.0,left: 30.0,top: 80.0,bottom: 20.0),
-        child: Container(
+        child:
+        Container(
           decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(20),

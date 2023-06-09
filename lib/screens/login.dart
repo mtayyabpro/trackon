@@ -69,14 +69,18 @@ class login extends StatelessWidget {
                 width: 300,
                 height: 50,
                 decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(35),
-                  boxShadow: [
-                    BoxShadow(
-                      blurRadius: 10,
-                     // color: Colors.grey
-                    )
-                  ]
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(20),
+                    boxShadow: [
+                      BoxShadow(
+                          color: Color(0xffe5e5e5),
+                          blurRadius: 10,
+                          offset: Offset(1,1),
+                          spreadRadius: 5
+
+                      )
+                    ]
+
                 ),
 
                 child: TextField(
@@ -102,16 +106,18 @@ class login extends StatelessWidget {
                 width: 300,
                 height: 50,
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(30),
-                  color: Colors.white,
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.white.withOpacity(0.5), // Color of the shadow
-                      offset: Offset(0, 2), // Offset of the shadow
-                      blurRadius: 10, // Blur radius of the shadow
-                      spreadRadius: 2, // Spread radius of the shadow
-                    ),
-                  ],
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(20),
+                    boxShadow: [
+                      BoxShadow(
+                          color: Color(0xffe5e5e5),
+                          blurRadius: 10,
+                          offset: Offset(1,1),
+                          spreadRadius: 5
+
+                      )
+                    ]
+
                 ),
 
                
@@ -183,9 +189,10 @@ class login extends StatelessWidget {
             ],
           ),
           SizedBox(
-            height: 50,
+            height: 40,
           ),
           Row(
+            
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Column(
