@@ -39,45 +39,51 @@ class SecondPage extends StatelessWidget {
           ),
           child: Column(
             children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Column(
-                    children: [
-                      Image.asset("assets/icons/Group 28.png",scale: 3,)
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      Image.asset("assets/icons/Group 32.png",scale: 3,)
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      Image.asset("assets/icons/Group 30.png",scale: 3,)
-                    ],
-                  )
-                ],
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Column(
+                      children: [
+                        Image.asset("assets/icons/Group 28.png",scale: 3,)
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        Image.asset("assets/icons/Group 32.png",scale: 3,)
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        Image.asset("assets/icons/Group 30.png",scale: 3,)
+                      ],
+                    )
+                  ],
+                ),
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Column(
-                    children: [
-                      Image.asset("assets/icons/Group 33.png",scale: 3,)
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      Image.asset("assets/icons/Group 31.png",scale: 3,)
-                    ],
-                  ),
-                  Column(
-                    children: [
-                      Image.asset("assets/icons/Group 29.png",scale: 3,)
-                    ],
-                  )
-                ],
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Column(
+                      children: [
+                        Image.asset("assets/icons/Group 33.png",scale: 3,)
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        Image.asset("assets/icons/Group 31.png",scale: 3,)
+                      ],
+                    ),
+                    Column(
+                      children: [
+                        Image.asset("assets/icons/Group 29.png",scale: 3,)
+                      ],
+                    )
+                  ],
+                ),
               )
             ],
           ),
