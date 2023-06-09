@@ -39,6 +39,13 @@ class SecondPage extends StatelessWidget {
           ),
           child: Column(
             children: [
+              SizedBox(height: 270,),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text("Total: 08",style: TextStyle(fontSize: 18,fontWeight: FontWeight.w700,color: Colors.grey),)
+                ],
+              ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Row(
@@ -46,17 +53,20 @@ class SecondPage extends StatelessWidget {
                   children: [
                     Column(
                       children: [
-                        Image.asset("assets/icons/Group 28.png",scale: 3,)
+                        Image.asset("assets/icons/Group 28.png",scale: 3,),
+                        Text("Stoped",style: TextStyle(color: Colors.grey),),
                       ],
                     ),
                     Column(
                       children: [
-                        Image.asset("assets/icons/Group 32.png",scale: 3,)
+                        Image.asset("assets/icons/Group 32.png",scale: 3,),
+                        Text("Moving",style: TextStyle(color: Colors.grey),),
                       ],
                     ),
                     Column(
                       children: [
-                        Image.asset("assets/icons/Group 30.png",scale: 3,)
+                        Image.asset("assets/icons/Group 30.png",scale: 3,),
+                        Text("Idle",style: TextStyle(color: Colors.grey),),
                       ],
                     )
                   ],
@@ -69,17 +79,20 @@ class SecondPage extends StatelessWidget {
                   children: [
                     Column(
                       children: [
-                        Image.asset("assets/icons/Group 33.png",scale: 3,)
+                        Image.asset("assets/icons/Group 33.png",scale: 3,),
+                        Text("Offline",style: TextStyle(color: Colors.grey),),
                       ],
                     ),
                     Column(
                       children: [
-                        Image.asset("assets/icons/Group 31.png",scale: 3,)
+                        Image.asset("assets/icons/Group 31.png",scale: 3,),
+                        Text("Not Conn.",style: TextStyle(color: Colors.grey),),
                       ],
                     ),
                     Column(
                       children: [
-                        Image.asset("assets/icons/Group 29.png",scale: 3,)
+                        Image.asset("assets/icons/Group 29.png",scale: 3,),
+                        Text("Expired",style: TextStyle(color: Colors.grey),),
                       ],
                     )
                   ],
@@ -100,7 +113,7 @@ class thirdPage extends StatelessWidget {
         color: Colors.green,
         child: Center(
           child: Text(
-            'Second Page',
+            'Home Page',
             style: TextStyle(fontSize: 24, color: Colors.white),
           ),
         ),
